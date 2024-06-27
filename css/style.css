@@ -1,0 +1,660 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eaeaea;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1.4rem 5%;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.navbar .navbar-logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar .navbar-logo span {
+  color: #1e83b7;
+}
+
+.navbar .navbar-nav {
+  position: absolute;
+  right: 5%;
+  padding: 1rem 0;
+}
+
+.navbar .navbar-nav a {
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0 2rem;
+  color: #000;
+}
+
+.navbar .navbar-nav .btn-nav {
+  padding: 0.8rem 1.3rem;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #098cff;
+}
+
+.navbar .navbar-nav .btn-nav:hover {
+  background-color: #0881ea;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  /* background: linear-gradient(to right, #fff 55%, #d0ebff 45%); */
+  background-image: url("../img/doctor-bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.hero .content {
+  position: absolute;
+  padding: 1.4rem 5%;
+  max-width: 55rem;
+}
+
+.hero .content h1 {
+  font-size: 7em;
+  line-height: 0.9;
+  font-weight: 200;
+}
+
+.hero .content .doctor {
+  color: #1e83b7;
+}
+
+.hero .content .online {
+  color: #1e83b7;
+  line-height: 1;
+  font-size: 5rem;
+}
+
+.hero .content p {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  line-height: 1.2;
+  font-weight: 200;
+}
+
+.hero .content .btn-main {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.hero .content .btn-main .schedule {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  margin-right: 2rem;
+  background-color: #098cff;
+  border-radius: 0.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.hero .content .btn-main .learn-more {
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  background-color: #eaeaea;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+/* Information Section */
+.information {
+  padding: 8rem 5% 5rem;
+}
+
+.information h1 {
+  margin: 0 auto;
+  width: 60%;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.information p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-weight: 200;
+}
+
+.information .card-information {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.information .card-information .card {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+}
+
+.information .card-information .card h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.information .card-information .card p {
+  max-width: 12rem;
+  font-size: 1.1rem;
+  margin: 1rem auto 0;
+  text-align: center;
+  font-weight: 200;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 0 7%;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+}
+
+.about .row .content {
+  max-width: 45rem;
+}
+
+.about .row .content h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.about .row .content p {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  font-weight: 200;
+}
+
+.about .row .content .more {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.about .row .content .more:hover {
+  color: #098cff;
+}
+
+.about .row .about-img img {
+  width: 100%;
+  object-fit: cover;
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 90%);
+}
+
+/* Work Section */
+.work {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.work .row {
+  padding: 8rem 5% 5rem;
+}
+
+.work .row .content {
+  text-align: center;
+}
+
+.work .row .content h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.work .row .content p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.work .row .tutorial {
+  display: flex;
+  margin-top: 8rem;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.work .row .tutorial .card {
+  width: 250px;
+  cursor: pointer;
+  border: 1px solid #d8d8d8;
+  padding: 2rem 1rem 2rem 1rem;
+  border-radius: 5px;
+  border-bottom: 10px solid #999;
+  transition: 0.5s;
+}
+
+.work .row .tutorial .card.active {
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.2);
+  border-bottom: 10px solid #098cff;
+  transform: translateY(-1rem);
+}
+
+.work .row .tutorial .card h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  max-width: 10rem;
+  font-weight: 500;
+}
+
+.work .row .tutorial .card p {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+/* Our Doctor Section */
+.swiper {
+  width: 95vw;
+}
+
+.doctor .row {
+  padding: 8rem 1% 5rem;
+}
+
+.doctor .row .content {
+  text-align: center;
+}
+
+.doctor .row .content h2 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.doctor .row .content p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.doctor .row .warp-card {
+  margin-top: 8rem;
+}
+
+.doctor .row .warp-card .card {
+  width: 300px;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-bottom: 10px solid #999;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.doctor .row .warp-card .card.active {
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.2);
+  border-bottom: 10px solid #098cff;
+  transform: translateY(-1rem);
+}
+.doctor .row .warp-card .card .card-img {
+  height: 300px;
+}
+
+.doctor .row .warp-card .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctor .row .warp-card .card .name-doctor {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.doctor .row .warp-card .card .name-doctor h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.doctor .row .warp-card .card .name-doctor span {
+  font-size: 1rem;
+  color: #999;
+}
+
+.doctor .row .warp-card .card .star {
+  margin-top: -0.4rem;
+}
+
+.doctor .row .warp-card .card .star i {
+  color: #ffd700;
+  font-size: 0.7rem;
+}
+
+.doctor .row .warp-card .card .describe {
+  margin-top: 1rem;
+}
+
+.doctor .row .warp-card .card .describe p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.doctor .row .warp-card .card .btn-card {
+  margin: 2rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.doctor .row .warp-card .card .btn-card button {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1rem 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.doctor .row .warp-card .card .btn-card .jadwal {
+  flex-grow: 2;
+  background-color: #098cff;
+  color: #fff;
+}
+
+.doctor .row .card .btn-card .tentang {
+  flex-grow: 1;
+}
+
+/* Client Section */
+.client {
+  background-color: #fff;
+}
+
+.client .row {
+  padding: 8rem 1% 5rem;
+}
+
+.client .row .content {
+  text-align: center;
+}
+
+.client .row .content h2 {
+  margin: 0 auto;
+  font-size: 4rem;
+  width: 40%;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.client .row .content p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-weight: 200;
+}
+
+.client .row .warp-card {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.client .row .warp-card .card {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  width: 300px;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.client .row .warp-card .card .card-img {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.client .row .warp-card .card .card-img .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.client .row .warp-card .card .card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.client .row .warp-card .card .card-img .name h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.client .row .warp-card .card .star {
+  margin-top: 0.7rem;
+}
+
+.client .row .warp-card .card .star i {
+  color: #ffd700;
+  font-size: 1rem;
+}
+
+.client .row .warp-card .card .comment p {
+  padding: 1rem 0;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 200;
+}
+
+.client .row .warp-card .card .comment .time {
+  position: absolute;
+  bottom: 0;
+}
+
+.client .row .warp-card .card .comment .time p {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-size: 0.8rem;
+}
+
+/* footer */
+footer {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+footer .content {
+  margin: 0 auto;
+}
+
+footer .content p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer .content i {
+  color: red;
+}
+
+footer .content a {
+  color: #000;
+}
+
+footer .content a:hover {
+  color: #098cff;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar,
+  .hero .content {
+    padding: 1.4rem 7%;
+  }
+
+  .navbar {
+    background-color: #fff;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    right: -100%;
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    font-size: 2rem;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .navbar .navbar-nav a:hover {
+    background-color: #098cff;
+    color: #fff;
+  }
+
+  .navbar .navbar-nav .btn-nav {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .hero {
+    background-position-x: 60%;
+  }
+
+  .hero .content p {
+    font-weight: 300;
+  }
+
+  .information,
+  .about,
+  .client {
+    padding: 8rem 7% 5rem;
+  }
+
+  .information h1 {
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .information p {
+    font-size: 1.5rem;
+  }
+
+  .information .header-information h1 {
+    width: 100%;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  .about .row .about-img img {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0));
+  }
+
+  .about .row .content {
+    max-width: 90%;
+  }
+
+  .work .row .tutorial {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .work .row .tutorial .card {
+    width: 70%;
+  }
+
+  .client .row .content h2 {
+    width: 90%;
+  }
+
+  .client .row .warp-card {
+    gap: 5rem;
+  }
+
+  .client .row .warp-card .card {
+    width: 70%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
